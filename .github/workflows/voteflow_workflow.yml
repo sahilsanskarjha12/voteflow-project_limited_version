@@ -1,0 +1,47 @@
+name: VoteFlow Workflow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run Data Processing Pipeline
+        run: |
+          python data_processing/data_cleaning.py
+          python data_processing/data_transformation.py
+          python data_processing/data_aggregation.py
+
+      - name: Run Visualization Techniques
+        run: |
+          # Add command to start visualization server or build static files
+
+      - name: Run System Architecture
+        run: |
+          python system_architecture/app.py
+
+      - name: Run Performance Evaluation
+        run: |
+          python evaluation/performance_evaluation.py
+
+      - name: Run Security Evaluation
+        run: |
+          python evaluation/security_evaluation.py
+
+      - name: Run Comparative Analysis
+        run: |
+          python comparison/comparative_analysis.py
+
+      # Add additional steps for deployment or other tasks
