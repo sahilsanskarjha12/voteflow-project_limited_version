@@ -21,7 +21,6 @@ VoteFlow is an innovative data visualization platform designed to analyze and ex
 - user_interface/: Contains HTML and CSS files for user interface design.
 - evaluation/: Includes scripts for performance and security evaluations.
 - comparison/: Contains scripts for comparative analysis with baseline solutions.
-- .github/workflows/: Contains GitHub Actions workflow YAML for automated testing and deployment.
 
 ## Usage
 
