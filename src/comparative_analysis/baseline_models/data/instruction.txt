@@ -1,0 +1,13 @@
+make two files here in .csv format 
+train_baseline_model.csv
+test_baseline_model.csv
+
+
+with contents as 
+
+
+feature1, feature2, feature3, ..., target_column
+value1_1, value1_2, value1_3, ..., class1
+value2_1, value2_2, value2_3, ..., class2
+value3_1, value3_2, value3_3, ..., class1
+...

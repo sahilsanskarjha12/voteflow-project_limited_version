@@ -1,0 +1,8 @@
+
+/* Add font-face rule to define custom font */
+@font-face {
+    font-family: 'CustomFont';
+    src: url('font.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
